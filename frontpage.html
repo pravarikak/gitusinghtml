@@ -1,0 +1,189 @@
+<html>
+<head>
+   <h2> Git commands </h2>
+</head>    
+
+<body>
+    <div class ="container">
+        <div class="localdisk">
+            Local(Disk)
+        </div>
+        <div class="remote">
+            Remote(Cloud)
+        </div>
+    </div>
+    <div class ="container2">
+        <div class="workingdirectory">
+            Working Directory
+            
+        </div>
+        <div class="fortext">
+            <div id="myDiv" class="myDiv" style="display:none;">helps the file to move to staging area</div>
+            
+        </div>
+        <div class="stagingarea">
+            Staging Area
+        </div>
+        <div class="fortext">
+        <div id="myDiv2" class="myDiv" style="display:none;">move from staging to local repo</div>
+        </div>
+        <div class="localrepo">
+            Local git repo
+        </div>
+        <div class="fortext">
+        <div id="myDiv3" class="myDiv" style="display:none;">move from local repo to remote repo</div>
+        </div>
+        <div class="remoterepo">
+            remote git repo
+        </div>
+
+    </div>
+    <div class="forlines">
+        <div id="myDiv" style="display:none;" class="divider">helps the file to move to staging area</div>
+        <div class="divider2" id="myDiv2" style="display:none;">move from staging to local repo</div>
+    </div>
+    
+    <button id="myButton">Add</button>
+    <button id="commit">Commit</button>
+    <button id="push">Push</button>
+    <button id="fetch">Fetch/Pull</button>
+    <div id="myDiv4" style="display:none;">move from remote repo to local repo</div>
+    <button id="checkout">Checkout</button>
+    <div id="myDiv4" style="display:none;">move from remote repo to local repo</div>
+    
+<style>
+.fortext{
+    display: flex;
+    justify-content: space-between; /* Spreads elements across the container */
+    align-items: flex-start;
+    gap:70px;
+    align-items: center;
+    padding-bottom: 200px;
+}
+.container{
+    display: flex;
+    justify-content: space-between; /* Spreads elements across the container */
+    align-items: flex-start;
+    gap:70px;
+    
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Spreads elements across the container */
+    align-items: flex-start;
+    gap:-20px;
+    width:87%;
+}
+.localdisk{
+    border:solid;
+    border-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding:20px;
+    background-color: rgba(21, 91, 121, 0.31);
+    width:70%;
+    
+}
+.remote{
+    border:solid;
+    border-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding:20px;
+    background-color: rgba(21, 91, 121, 0.31);
+    width:30%;
+}
+.workingdirectory,.stagingarea,.localrepo,.remoterepo{
+    border:solid;
+    border-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: bisque;
+    padding-top:100px;
+    padding-bottom:100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 50px;
+}
+.stagingarea{
+    background-color:beige;
+}
+.localrepo{
+    background-color: powderblue;
+}
+.remoterepo{
+    background-color: rgb(133, 194, 178);
+}
+.forlines{
+    display: flex;
+    flex-direction: row;
+}
+.divider{
+    border:solid;
+    border-color: black;
+    box-sizing: 10px;
+    padding-left:100px;
+    padding-bottom: 500px;
+    padding-right: 280px;
+    border-top: white;
+    margin-left: 70px;
+    border-bottom: white;
+}
+.divider2{
+    border:solid;
+    border-color: black;
+    box-sizing: 10px;
+    padding-left:100px;
+    padding-bottom: 500px;
+    padding-right: 280px;
+    border-top: white;
+    margin-left: 340px;
+    border-bottom: white;
+}
+.myDiv{
+    margin-top:20px;
+    border:solid;
+    border-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding:20px;
+    background-color: rgba(21, 91, 121, 0.31);
+    width:70%;
+}
+</style>
+<script>
+    // JavaScript code here
+    document.getElementById("myButton").addEventListener("click", function() {
+      var div = document.getElementById("myDiv");
+      if (div.style.display === "none") {
+        div.style.display = "block"; // Show the div
+      } else {
+        div.style.display = "none"; // Hide the div again
+      }
+    });
+    document.getElementById("commit").addEventListener("click", function() {
+      var div = document.getElementById("myDiv2");
+      if (div.style.display === "none") {
+        div.style.display = "block"; // Show the div
+      } else {
+        div.style.display = "none"; // Hide the div again
+      }
+    });
+    document.getElementById("push").addEventListener("click", function() {
+      var div = document.getElementById("myDiv3");
+      if (div.style.display === "none") {
+        div.style.display = "block"; // Show the div
+      } else {
+        div.style.display = "none"; // Hide the div again
+      }
+    });
+    document.getElementById("fetch").addEventListener("click", function() {
+      var div = document.getElementById("myDiv4");
+      if (div.style.display === "none") {
+        div.style.display = "block"; // Show the div
+      } else {
+        div.style.display = "none"; // Hide the div again
+      }
+    });
+  </script>
+</html>
+</body>
